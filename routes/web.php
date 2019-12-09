@@ -15,7 +15,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/test/','Test\WeiXinController@admin');
+Route::get('/test/','Test\TestController@admin');
+
+//微信开发
+Route::get('/Wx/','WeiXin\WxController@wechat');
 
 
 
