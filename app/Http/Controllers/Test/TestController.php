@@ -15,4 +15,5 @@ class TestController extends Controller
         $echostr = $request -> input('echostr');
         echo $echostr;die;
     }
+    
 }

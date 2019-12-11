@@ -16,6 +16,7 @@ Route::get('/', function () {
 });
 
 Route::get('/test/','Test\TestController@admin');
+Route::get('/test/','Test\TestController@xmlTest');
 
 //微信开发
 Route::get('/Wx/','WeiXin\WxController@index');
