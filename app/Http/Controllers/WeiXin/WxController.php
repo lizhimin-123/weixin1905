@@ -25,8 +25,6 @@ class WxController extends Controller
         return $arr['access_token'];
     }
 
-
-
     /*处理微信接入*/
     public function index()
     {
@@ -83,6 +81,7 @@ class WxController extends Controller
             }else{
                 /*获取用户信息*/
                 $url="https://api.weixin.qq.com/cgi-bin/user/info?access_token=".$this->access_token."&openid=".$openid."&lang=zh_CN";
+
                 $user_info=file_get_contents($url);
                 $data=json_decode($user_info,true);
                 //
@@ -95,7 +94,7 @@ class WxController extends Controller
                 ];
                 //信息入库
                 $uid=WxUserModel::insertGetId($user_data);
-                $msg=$user_data['nickname']."谢谢你的关注";
+                $msg="谢谢你的关注";
                 $response_text='<xml>
                           <ToUserName><![CDATA['.$openid.']]></ToUserName>
                           <FromUserName><![CDATA['.$xml_obj->ToUserName.']]></FromUserName>
@@ -106,17 +105,14 @@ class WxController extends Controller
                 echo $response_text;
             }
         }
-
         //判断消息类型
         $msg_type=$xml_obj->MsgType;
-
         $touser=$xml_obj->FromUserName;//接收消息的用户的openid
         $fromuser=$xml_obj->ToUserName;//开发者公众号的ID
         $time=time();
         if ($msg_type=="text") {
-            $content="现在是格林威治时间" . date('Y-m-d H:i:s') . "，您发送的内容是：" . $xml_obj->Content;
-            $response_text=
-                '<xml>
+            $content="现在是格林威治时间" .date('Y-m-d H:i:s') . "，您发送的内容是：" . $xml_obj->Content;
+            $response_text='<xml>
                   <ToUserName><![CDATA['.$touser.']]></ToUserName>
                   <FromUserName><![CDATA['.$fromuser.']]></FromUserName>
                   <CreateTime>'.$time.'</CreateTime>
@@ -126,9 +122,6 @@ class WxController extends Controller
             echo $response_text;
         }
     }
-
-
-
     /**
      * 获取用户基本信息
      */
