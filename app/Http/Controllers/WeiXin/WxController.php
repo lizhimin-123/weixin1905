@@ -58,7 +58,7 @@ class WxController extends Controller
         $log="wechat.log";
         $xml_str=file_get_contents("php://input");
         //将接收的数据记录到日志文件
-        $data=date('Y-m-d H:i:s').'>>>>>>\n'. $xml_str;
+        $data=date('Y-m-d H:i:s').''. $xml_str;
         file_put_contents($log,$data,FILE_APPEND);
 
 
