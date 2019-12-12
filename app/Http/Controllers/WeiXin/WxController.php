@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\WeiXin;
 
 use App\Http\Controllers\Controller;
 use App\Model\WxUserModel;
 use Illuminate\Http\Request;
 
-class WechatController extends Controller
+class WxController extends Controller
 {
     protected $access_token;
 
@@ -30,7 +30,7 @@ class WechatController extends Controller
     /*处理微信接入*/
     public function index()
     {
-        $token = 'ljnbyzyq666';       //开发提前设置好的 token
+        $token = 'token';       //开发提前设置好的 token
         $signature = $_GET["signature"];
         $timestamp = $_GET["timestamp"];
         $nonce = $_GET["nonce"];
@@ -51,8 +51,6 @@ class WechatController extends Controller
             die("not ok");
         }
     }
-
-
 
     /*接收微信推送事件*/
     public function receiv()
