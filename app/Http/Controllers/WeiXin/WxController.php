@@ -73,11 +73,11 @@ class WxController extends Controller
                 //echo '<pre>';print_r($u);echo '</pre>';die;
                 //入库用户信息
                 $user_data = [
-                    'openid'    => $openid,
-                    'nickname'  => $u['nickname'],
-                    'sex'       => $u['sex'],
-                    'headimgurl'    => $u['headimgurl'],
-                    'subscribe_time'    => $u['subscribe_time']
+                    'openid'=> $openid,
+                    'nickname'=> $u['nickname'],
+                    'sex'=> $u['sex'],
+                    'headimgurl'=> $u['headimgurl'],
+                    'subscribe_time'=> $u['subscribe_time']
                 ];
                 //openid 入库
                 $uid = WxUserModel::insertGetId($user_data);
