@@ -22,6 +22,7 @@ Route::get('test/xml','Test\TestController@xmlTest');
 //微信开发
 Route::get('/Wx/','WeiXin\WxController@index');
 Route::post('/Wx/','WeiXin\WxController@receiv');
+Route::post('/Wx/','WeiXin\WxController@getMedia');
 
 
 
