@@ -112,7 +112,7 @@ class WxController extends Controller
         $fromuser=$xml_obj->ToUserName;//开发者公众号的ID
         $time=time();
         if ($msg_type=="text") {
-            $content="现在是格林威治时间" .date('Y-m-d H:i:s') . "，您发送的内容是：" . $xml_obj->Content;
+            $content="现在是俺河南时间" .date('Y-m-d H:i:s') . "，您发送的内容是：" . $xml_obj->Content;
             $response_text='<xml>
                   <ToUserName><![CDATA['.$touser.']]></ToUserName>
                   <FromUserName><![CDATA['.$fromuser.']]></FromUserName>
@@ -133,5 +133,19 @@ class WxController extends Controller
         $json_str = file_get_contents($url);
         $log = 'wechat.log';
         file_put_contents($log,$json_str,FILE_APPEND);
+    }
+
+    /**
+     * 获取素材
+     */
+    public function getMedia()
+    {
+        $media_id = 'oWyg40tgyu1yaQ_SIYAdOaqrU9nX07iUDpyZ5f6RtJ1EdC2FOIHkJQ4ZT-BlI_Vg';
+        $url = 'https://api.weixin.qq.com/cgi-bin/media/get?access_token='.$this->access_token.'&media_id='.$media_id;
+        //下载图片
+        $img = file_get_contents($url);
+        // 保存文件
+        file_put_contents('cat.jpg',$img);
+        echo "下载成功";
     }
 }
