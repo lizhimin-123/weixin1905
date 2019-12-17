@@ -12,17 +12,25 @@
 */
 
 Route::get('/', function () {
+//    $file_name="abc.mp3";
+//    $info=pathinfo($file_name);
+//
+//    echo $file_name.'的文件扩展名为:'.pathinfo($file_name)['extension'];die;
+
     return view('welcome');
 });
 
 Route::get('/test/','Test\TestController@admin');
 Route::get('test/xml','Test\TestController@xmlTest');
+Route::get('/test/redis1','Test\TestController@redis1');
+Route::get('/test/redis2','Test\TestController@redis2');
 
 
 //微信开发
+Route::get('/Wx/test','WeiXin\WxController@test');
 Route::get('/Wx/','WeiXin\WxController@index');
 Route::post('/Wx/','WeiXin\WxController@receiv');
-Route::get('/Wx/media','WeiXin\WxController@getMedia');
+Route::get('/Wx/media','WeiXin\WxController@getMedia');//获取临时素材
 
 
 
