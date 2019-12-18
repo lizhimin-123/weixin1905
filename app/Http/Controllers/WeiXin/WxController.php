@@ -68,17 +68,14 @@ class WxController extends Controller
     {
         $log = "wechat.log";
         $xml_str = file_get_contents("php://input");
-
         //将接收的数据记录到日志文件
-        $data = date('Y-m-d H:i:s') . '' . $xml_str;
+        $data = date('Y-m-d H:i:s') . '>>>\n' . $xml_str."\n\n";
         file_put_contents($log, $data, FILE_APPEND);
-
-
         $xml_obj = simplexml_load_string($xml_str);//处理xml数据
         $event = $xml_obj->Event;//获取事件类型
 
+        $openid = $xml_obj->FromUserName;//获取用户的openid
         if ($event == 'subscribe') {
-            $openid = $xml_obj->FromUserName;//获取用户的openid
             $user = WxUserModel::where(['openid' => $openid])->first();
             if ($user) {
                 $msg = "欢迎回来";
@@ -118,6 +115,22 @@ class WxController extends Controller
                         </xml>';
                 echo $response_text;
             }
+        }elseif ($event=='CLICK'){//菜单点击事件
+            //获取天气
+            if($xml_obj->EventKey=='weather'){
+                $response_xml='<xml>
+<ToUserName><![CDATA[' . $openid . ']]></ToUserName>
+                          <FromUserName><![CDATA[' . $xml_obj->ToUserName . ']]></FromUserName>
+                          <CreateTime>' . time() . '</CreateTime>
+                          <MsgType><![CDATA[text]]></MsgType>
+                          <Content><![CDATA['.date('Y-m-d H:i:s') .'晴天'.']]></Content>
+                          </xml>';
+                echo $response_xml;
+            }
+//            else{
+//                echo "未知";
+//            }
+
         }
 
 
@@ -155,7 +168,9 @@ class WxController extends Controller
 </xml>';
             echo $response;
 
-        } elseif ($msg_type == 'voice') {          // 语音消息
+        }
+
+        elseif ($msg_type == 'voice') {          // 语音消息
             // 下载语音
             $this->getMedia2($media_id, $msg_type);
             // TODO 回复语音
@@ -186,6 +201,11 @@ class WxController extends Controller
 </xml>';
             echo $response;
         }
+
+
+
+
+
 
 
     }
@@ -254,18 +274,19 @@ class WxController extends Controller
             'button' =>[
                 [
                     'type'  =>'click',
-                    'name'  =>'1905A',
-                    'key'   =>'1905key'
+                    'name'  =>'获取天气',
+                    'key'   =>'weather'
                 ],
+
             ]
         ];
 
-        $menu_json = json_encode($menu);
+        $menu_json = json_encode($menu,JSON_UNESCAPED_UNICODE);
         $client = new Client();
         $response=$client->request('POST',$url,[
             'body' =>$menu_json
         ]);
-
+        echo "<pre>";print_r($menu);echo"</pre>";
         echo $response->getBody();//接收微信接口响应数据
     }
 }
