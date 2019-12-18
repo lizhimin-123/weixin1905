@@ -34,6 +34,8 @@ Route::get('/Wx/media','WeiXin\WxController@getMedia');//获取临时素材
 
 Route::get('/Wx/menu','WeiXin\WxController@createMenu');//创建微信自定义菜单
 
+//微信公众号
+Route::get('/vote','VoteController@index');        //微信投票
 
 
 
