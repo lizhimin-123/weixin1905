@@ -10,12 +10,12 @@ use GuzzleHttp\Client;
 
 class WxController extends Controller
 {
-    protected $access_token;
+    protected $access_token='28_BhmFhb_fMkLUtgBM98G1mTBb9dj6kpP1qBRQO_gwB8O33VwdRVmoDeHLKVtGDFVDupho1RiQbgWZRT8oW-hDnQryEkbPVM35qgYUcDPxV21Ey65zzc-ic1L4fkB70eC15ssXAanoP1OH-iXoWRNfAFAPKG';
 
     public function __construct()
     {
         //获取access_token
-        $this->access_token = $this->getAccessToken();
+//        $this->access_token = $this->getAccessToken();
     }
 
     public function test()
@@ -24,7 +24,7 @@ class WxController extends Controller
     }
 
     //获取access_token
-    public function getAccessToken()
+    protected function getAccessToken()
     {
         $key = "wx_access_token";
         $access_token = Redis::get($key);
@@ -68,64 +68,68 @@ class WxController extends Controller
     {
         $log = "wechat.log";
         $xml_str = file_get_contents("php://input");
+
         //将接收的数据记录到日志文件
         $data = date('Y-m-d H:i:s') . '' . $xml_str;
         file_put_contents($log, $data, FILE_APPEND);
 
 
         $xml_obj = simplexml_load_string($xml_str);//处理xml数据
-
         $event = $xml_obj->Event;//获取事件类型
-        if ($event == 'subscribe') {
-            $openid = $xml_obj->FromUserName;//获取用户的openid
-            $user = WxUserModel::where(['openid' => $openid])->first();
-            if ($user) {
-                $msg = "欢迎回来";
-                $response_text = '<xml>
+
+            if ($event == 'subscribe') {
+                $openid = $xml_obj->FromUserName;//获取用户的openid
+                $user = WxUserModel::where(['openid' => $openid])->first();
+                if ($user) {
+                    $msg = "欢迎回来";
+                    $response_text = '<xml>
                           <ToUserName><![CDATA[' . $openid . ']]></ToUserName>
                           <FromUserName><![CDATA[' . $xml_obj->ToUserName . ']]></FromUserName>
                           <CreateTime>' . time() . '</CreateTime>
                           <MsgType><![CDATA[text]]></MsgType>
                           <Content><![CDATA[' . $msg . ']]></Content>
                         </xml>';
-                //欢迎回家
-                echo $response_text;
-            } else {
-                /*获取用户信息*/
-                $url = "https://api.weixin.qq.com/cgi-bin/user/info?access_token=" . $this->access_token . "&openid=" . $openid . "&lang=zh_CN";
+                    //欢迎回家
+                    echo $response_text;
+                } else {
+                    /*获取用户信息*/
+                    $url = "https://api.weixin.qq.com/cgi-bin/user/info?access_token=" . $this->access_token . "&openid=" . $openid . "&lang=zh_CN";
 
-                $user_info = file_get_contents($url);
-                $data = json_decode($user_info, true);
-                //
-                $user_data = [
-                    'openid' => $openid,
-                    'subscribe_time' => $data['subscribe_time'],
-                    'nickname' => $data['nickname'],
-                    'sex' => $data['sex'],
-                    'headimgurl' => $data['headimgurl'],
-                ];
-                //信息入库
+                    $user_info = file_get_contents($url);
+                    $data = json_decode($user_info, true);
+                    //
+                    $user_data = [
+                        'openid' => $openid,
+                        'subscribe_time' => $data['subscribe_time'],
+                        'nickname' => $data['nickname'],
+                        'sex' => $data['sex'],
+                        'headimgurl' => $data['headimgurl'],
+                    ];
+                    //信息入库
 
-                $uid = WxUserModel::insertGetId($user_data);
-                $msg = "谢谢你的关注";
-                $response_text = '<xml>
+                    $uid = WxUserModel::insertGetId($user_data);
+                    $msg = "谢谢你的关注";
+                    $response_text = '<xml>
                           <ToUserName><![CDATA[' . $openid . ']]></ToUserName>
                           <FromUserName><![CDATA[' . $xml_obj->ToUserName . ']]></FromUserName>
                           <CreateTime>' . time() . '</CreateTime>
                           <MsgType><![CDATA[text]]></MsgType>
                           <Content><![CDATA[' . $msg . ']]></Content>
                         </xml>';
-                echo $response_text;
+                    echo $response_text;
+                }
             }
-        }
+
+
         //判断消息类型
+
+
+            // 判断消息类型
         $msg_type = $xml_obj->MsgType;
         $touser = $xml_obj->FromUserName;//接收消息的用户的openid
         $fromuser = $xml_obj->ToUserName;//开发者公众号的ID
         $time = time();
-
         $media_id = $xml_obj->MediaId;
-
         if ($msg_type == "text") {
             $content = "现在是北京时间" . date('Y-m-d H:i:s') . "，您发送的内容是：" . $xml_obj->Content;
             $response_text = '<xml>
@@ -135,26 +139,7 @@ class WxController extends Controller
                   <MsgType><![CDATA[text]]></MsgType>
                   <Content><![CDATA[' . $content . ']]></Content>
             </xml>';
-
-
-            // 判断消息类型
-            $msg_type = $xml_obj->MsgType;
-            $touser = $xml_obj->FromUserName;       //接收消息的用户openid
-            $fromuser = $xml_obj->ToUserName;       // 开发者公众号的 ID
-            $time = time();
-            $media_id = $xml_obj->MediaId;
-            if ($msg_type == 'text') {
-                $content = date('Y-m-d H:i:s') . $xml_obj->Content;
-                $response_text = '<xml>
-  <ToUserName><![CDATA[' . $touser . ']]></ToUserName>
-  <FromUserName><![CDATA[' . $fromuser . ']]></FromUserName>
-  <CreateTime>' . $time . '</CreateTime>
-  <MsgType><![CDATA[text]]></MsgType>
-  <Content><![CDATA[' . $content . ']]></Content>
-</xml>';
-                echo $response_text;//回复用户消息
-                // TODO 消息入库
-            } else if ($msg_type == 'image') {    // 图片消息
+        } elseif ($msg_type == 'image') {    // 图片消息
                 // TODO 下载图片
                 $this->getMedia2($media_id, $msg_type);
                 // TODO 回复图片
@@ -168,6 +153,7 @@ class WxController extends Controller
   </Image>
 </xml>';
                 echo $response;
+
             } elseif ($msg_type == 'voice') {          // 语音消息
                 // 下载语音
                 $this->getMedia2($media_id, $msg_type);
@@ -200,7 +186,7 @@ class WxController extends Controller
                 echo $response;
             }
 
-        }
+
     }
         /**
          * 获取用户基本信息
