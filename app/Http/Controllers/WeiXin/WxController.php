@@ -269,6 +269,8 @@ class WxController extends Controller
      */
     public function createMenu()
     {
+        $url = 'http://1905lizhimin.comcto.com/vote';
+        $redirect_uri = urlencode($url);        //授权后跳转页面
         $url = "https://api.weixin.qq.com/cgi-bin/menu/create?access_token=".$this->access_token;
         $menu=[
             'button' =>[
