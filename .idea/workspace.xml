@@ -113,8 +113,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WeiXin/WxController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="271" column="46" selection-start-line="271" selection-start-column="46" selection-end-line="271" selection-end-column="46" />
+            <state relative-caret-position="311">
+              <caret line="271" column="38" selection-start-line="271" selection-start-column="38" selection-end-line="271" selection-end-column="38" />
               <folding>
                 <element signature="e#47#83#0#PHP" expanded="true" />
                 <element signature="e#1069#1599#0#PHP" />
@@ -389,12 +389,12 @@
       <workItem from="1576539445057" duration="20965000" />
       <workItem from="1576581300049" duration="10928000" />
       <workItem from="1576625829742" duration="6461000" />
-      <workItem from="1576639826513" duration="15425000" />
+      <workItem from="1576639826513" duration="16092000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137947000" />
+    <option name="totallyTimeSpent" value="138614000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -528,8 +528,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WeiXin/WxController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="271" column="46" selection-start-line="271" selection-start-column="46" selection-end-line="271" selection-end-column="46" />
+        <state relative-caret-position="311">
+          <caret line="271" column="38" selection-start-line="271" selection-start-column="38" selection-end-line="271" selection-end-column="38" />
           <folding>
             <element signature="e#47#83#0#PHP" expanded="true" />
             <element signature="e#1069#1599#0#PHP" />
