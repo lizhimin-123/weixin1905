@@ -280,10 +280,11 @@
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="662" />
-    <option name="width" value="1267" />
-    <option name="height" value="1038" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="648" />
+    <option name="y" value="21" />
+    <option name="width" value="1160" />
+    <option name="height" value="994" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -389,15 +390,15 @@
       <workItem from="1576539445057" duration="20965000" />
       <workItem from="1576581300049" duration="10928000" />
       <workItem from="1576625829742" duration="6461000" />
-      <workItem from="1576639826513" duration="16092000" />
+      <workItem from="1576639826513" duration="16501000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="138614000" />
+    <option name="totallyTimeSpent" value="139023000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="519" y="22" width="928" height="795" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.37268993" />
