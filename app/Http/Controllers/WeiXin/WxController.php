@@ -10,12 +10,12 @@ use GuzzleHttp\Client;
 
 class WxController extends Controller
 {
-    protected $access_token='28_BhmFhb_fMkLUtgBM98G1mTBb9dj6kpP1qBRQO_gwB8O33VwdRVmoDeHLKVtGDFVDupho1RiQbgWZRT8oW-hDnQryEkbPVM35qgYUcDPxV21Ey65zzc-ic1L4fkB70eC15ssXAanoP1OH-iXoWRNfAFAPKG';
+    protected $access_token;
 
     public function __construct()
     {
         //获取access_token
-//        $this->access_token = $this->getAccessToken();
+        $this->access_token = $this->getAccessToken();
     }
 
     public function test()
