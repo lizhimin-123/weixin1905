@@ -32,5 +32,8 @@ Route::get('/Wx/','WeiXin\WxController@index');
 Route::post('/Wx/','WeiXin\WxController@receiv');
 Route::get('/Wx/media','WeiXin\WxController@getMedia');//获取临时素材
 
+Route::get('/Wx/menu','WeiXin\WxController@createMenu');//创建微信自定义菜单
+
+
 
 
