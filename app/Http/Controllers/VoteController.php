@@ -11,7 +11,13 @@ class VoteController extends Controller
        echo '<pre>';print_r($_GET);echo'</pre>';
        $code = $_GET['code'];
        //获取access_token
-        $this->getAccessToken($code);
+        $data=$this->getAccessToken($code);
+        //获取用户信息
+        $user_info = $this ->getUserInfo($data['access_token'],$data['option']);
+        //处理业务逻辑
+        $redis_key = 'vote';
+        $number = Redis::incr($redis_key);
+        echo "投票成功".$number;
     }
 
     /**
@@ -22,6 +28,11 @@ class VoteController extends Controller
         $url = 'https://api.weixin.qq.com/sns/oauth2/access_token?appid='.env('APPID').'&secret='.env('APPSECRET').'&code='.$code.'&grant_type=authorization_code';
         $json_data=file_get_contents($url);
         $data=json_encode($json_data,true);
-        echo '<pre>';print_r($data);echo'</pre>';
+//        echo '<pre>';print_r($data);echo'</pre>';
+        if (isset($data['errcode'])){
+            //TODO 错误处理
+                die('出错了 40001');
+        }
+        return $data;
     }
 }
