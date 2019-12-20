@@ -284,6 +284,7 @@ class WxController extends Controller
                     'name'  => '投票111',
                     'url'   => 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx70b42c1d1a4ee5b4&redirect_uri='.$redirect_uri.'&response_type=code&scope=snsapi_userinfo&state=ABCD1905#wechat_redirect'
                 ],
+
             ]
         ];
 
