@@ -17,6 +17,18 @@ class VoteController extends Controller
         $user_info = $this ->getUserInfo($data['access_token'],$data['openid']);
 
         //处理业务逻辑
+        $openid = $user_info['openid'];
+        $key = 's:vote:lizhimin';
+        //  TODO 判断是否已经投过 集合或有序集合
+
+        Redis::Sadd($key,$openid);
+
+        $members = Redis::Smembers($key); //获取所有投票人数的openid
+        $total=Redis::Scard($key); //统计投票人数
+        echo "投票人数:".$total;
+        echo "<hr>";
+        echo "<pre>";print_r($members);echo"</pre>";
+
         $redis_key = 'vote';
         $number = Redis::incr($redis_key);
         echo "投票成功,当前票数".$number;
