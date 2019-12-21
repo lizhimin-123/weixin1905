@@ -26,7 +26,7 @@ class VoteController extends Controller
      * 根据code获取access_token
      * @param $code
      */
-    protected function getAccessToken($access_token,$openid){
+    protected function getUserInfo($access_token,$openid){
         $url = 'https://api.weixin.qq.com/sns/userinfo?access_token='. $access_token .'&openid='.$openid.'&lang=zh_CN';
         $json_data=file_get_contents($url);
         $data=json_decode($json_data,true);

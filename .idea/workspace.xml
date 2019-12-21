@@ -84,7 +84,7 @@
           <entry key="dummy" value="4" />
           <entry key="env" value="37" />
           <entry key="html" value="11" />
-          <entry key="php" value="4414" />
+          <entry key="php" value="4427" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
@@ -92,7 +92,7 @@
         <counts>
           <entry key="Blade" value="6" />
           <entry key="HTML" value="20" />
-          <entry key="PHP" value="4399" />
+          <entry key="PHP" value="4412" />
           <entry key="PLAIN_TEXT" value="45" />
         </counts>
       </usages-collector>
@@ -116,8 +116,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VoteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="78">
-              <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+            <state relative-caret-position="303">
+              <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
@@ -401,12 +401,12 @@
       <workItem from="1576625829742" duration="6461000" />
       <workItem from="1576639826513" duration="17895000" />
       <workItem from="1576712064971" duration="17539000" />
-      <workItem from="1576800452323" duration="22159000" />
+      <workItem from="1576800452323" duration="22418000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="180115000" />
+    <option name="totallyTimeSpent" value="180374000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="615" y="12" width="978" height="828" extended-state="0" />
@@ -564,8 +564,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VoteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
+        <state relative-caret-position="303">
+          <caret line="35" column="28" selection-start-line="35" selection-start-column="28" selection-end-line="35" selection-end-column="28" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
