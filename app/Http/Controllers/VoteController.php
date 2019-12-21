@@ -18,7 +18,7 @@ class VoteController extends Controller
 
         //处理业务逻辑
         $openid = $user_info['openid'];
-        $key = 's:vote:lizhimin';
+        $key = 'ss:vote:lizhimin';
         //  TODO 判断是否已经投过 集合或有序集合
         if (Redis::zrank($key,$user_info['openid'])){
             echo "已经投过票了";

@@ -87,7 +87,7 @@
           <entry key="dummy" value="4" />
           <entry key="env" value="37" />
           <entry key="html" value="11" />
-          <entry key="php" value="4975" />
+          <entry key="php" value="4982" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
@@ -95,7 +95,7 @@
         <counts>
           <entry key="Blade" value="6" />
           <entry key="HTML" value="20" />
-          <entry key="PHP" value="4960" />
+          <entry key="PHP" value="4967" />
           <entry key="PLAIN_TEXT" value="45" />
         </counts>
       </usages-collector>
@@ -119,8 +119,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VoteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+            <state relative-caret-position="350">
+              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
@@ -315,9 +315,9 @@
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="711" />
-    <option name="y" value="10" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="392" />
+    <option name="y" value="42" />
     <option name="width" value="1224" />
     <option name="height" value="1030" />
   </component>
@@ -405,15 +405,15 @@
       <workItem from="1576639826513" duration="17895000" />
       <workItem from="1576712064971" duration="17539000" />
       <workItem from="1576800452323" duration="23752000" />
-      <workItem from="1576900680835" duration="5201000" />
+      <workItem from="1576900680835" duration="6945000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186909000" />
+    <option name="totallyTimeSpent" value="188653000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="569" y="8" width="979" height="824" extended-state="0" />
+    <frame x="314" y="34" width="979" height="824" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.33767644" />
@@ -568,8 +568,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VoteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="30" column="14" lean-forward="true" selection-start-line="30" selection-start-column="14" selection-end-line="30" selection-end-column="14" />
+        <state relative-caret-position="350">
+          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
