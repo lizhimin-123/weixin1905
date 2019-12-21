@@ -84,7 +84,7 @@
           <entry key="dummy" value="4" />
           <entry key="env" value="37" />
           <entry key="html" value="11" />
-          <entry key="php" value="4315" />
+          <entry key="php" value="4327" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
@@ -92,7 +92,7 @@
         <counts>
           <entry key="Blade" value="6" />
           <entry key="HTML" value="20" />
-          <entry key="PHP" value="4300" />
+          <entry key="PHP" value="4312" />
           <entry key="PLAIN_TEXT" value="45" />
         </counts>
       </usages-collector>
@@ -100,11 +100,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/routes/web.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="29" column="33" lean-forward="true" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+            <state relative-caret-position="379">
+              <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="17" />
               <folding>
                 <element signature="e#7#389#0#PHP" expanded="true" />
                 <element signature="e#421#448#0#PHP" />
@@ -113,11 +113,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VoteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+            <state relative-caret-position="175">
+              <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
@@ -166,6 +166,7 @@
       <find>$redirect_uri</find>
       <find>access_token</find>
       <find>getUserInfo</find>
+      <find>Redis</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -191,8 +192,8 @@
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/index/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Index/IndexController.php" />
-        <option value="$PROJECT_DIR$/app/Http/Controllers/VoteController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/WeiXin/WxController.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/VoteController.php" />
       </list>
     </option>
   </component>
@@ -311,8 +312,8 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="543" />
-    <option name="y" value="12" />
+    <option name="x" value="645" />
+    <option name="y" value="25" />
     <option name="width" value="1379" />
     <option name="height" value="1035" />
   </component>
@@ -415,15 +416,15 @@
       <workItem from="1576625829742" duration="6461000" />
       <workItem from="1576639826513" duration="17895000" />
       <workItem from="1576712064971" duration="17539000" />
-      <workItem from="1576800452323" duration="16516000" />
+      <workItem from="1576800452323" duration="17712000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="174472000" />
+    <option name="totallyTimeSpent" value="175668000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="435" y="10" width="1103" height="828" extended-state="0" />
+    <frame x="516" y="20" width="1103" height="828" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.37033492" />
@@ -548,13 +549,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WeiXin/WxController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="29" column="33" lean-forward="true" selection-start-line="29" selection-start-column="33" selection-end-line="29" selection-end-column="33" />
+        <state relative-caret-position="447">
+          <caret line="287" column="13" lean-forward="true" selection-start-line="287" selection-start-column="13" selection-end-line="287" selection-end-column="13" />
           <folding>
-            <element signature="e#7#389#0#PHP" expanded="true" />
-            <element signature="e#421#448#0#PHP" />
+            <element signature="e#47#83#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -566,22 +566,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WeiXin/WxController.php">
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VoteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="447">
-          <caret line="287" column="13" lean-forward="true" selection-start-line="287" selection-start-column="13" selection-end-line="287" selection-end-column="13" />
+        <state relative-caret-position="175">
+          <caret line="10" column="50" lean-forward="true" selection-start-line="10" selection-start-column="50" selection-end-line="10" selection-end-column="50" />
           <folding>
-            <element signature="e#47#83#0#PHP" expanded="true" />
+            <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VoteController.php">
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="25" column="7" lean-forward="true" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
+        <state relative-caret-position="379">
+          <caret line="37" column="17" lean-forward="true" selection-start-line="37" selection-start-column="12" selection-end-line="37" selection-end-column="17" />
           <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
+            <element signature="e#7#389#0#PHP" expanded="true" />
+            <element signature="e#421#448#0#PHP" />
           </folding>
         </state>
       </provider>

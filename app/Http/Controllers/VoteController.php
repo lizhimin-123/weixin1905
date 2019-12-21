@@ -12,8 +12,10 @@ class VoteController extends Controller
        $code = $_GET['code'];
        //获取access_token
         $data=$this->getAccessToken($code);
+        dd($data);
         //获取用户信息
         $user_info = $this ->getUserInfo($data['access_token'],$data['option']);
+
         //处理业务逻辑
         $redis_key = 'vote';
         $number = Redis::incr($redis_key);
