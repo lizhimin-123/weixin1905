@@ -20,23 +20,27 @@ class VoteController extends Controller
         $openid = $user_info['openid'];
         $key = 's:vote:lizhimin';
         //  TODO 判断是否已经投过 集合或有序集合
-        if (Redis::sIsMember($key,$user_info['openid'])){
+        if (Redis::zrank($key,$user_info['openid'])){
             echo "已经投过票了";
         }else{
-            Redis::Sadd($key,$openid);
+            Redis::Zadd($key,time(),$openid);
+        }
+
+        $members = Redis::zRange($key,0,-1,true); //获取所有投票人数的openid
+        echo '<pre>';print_r($members);echo'</pre>';
+        foreach ($members as $k=>$v) {
+            echo "用户: ".$k.'投票时间: '.date('Y-m-d H:i:s');echo '</br>';
         }
 
 
+//        $total=Redis::Scard($key); //统计投票人数
+//        echo "投票人数:".$total;
+//        echo "<hr>";
+//        echo "<pre>";print_r($members);echo"</pre>";
 
-        $members = Redis::Smembers($key); //获取所有投票人数的openid
-        $total=Redis::Scard($key); //统计投票人数
-        echo "投票人数:".$total;
-        echo "<hr>";
-        echo "<pre>";print_r($members);echo"</pre>";
-
-        $redis_key = 'vote';
-        $number = Redis::incr($redis_key);
-        echo "投票成功,当前票数".$number;
+//        $redis_key = 'vote';
+//        $number = Redis::incr($redis_key);
+//        echo "投票成功,当前票数".$number;
     }
 
     /**
