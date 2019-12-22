@@ -25,6 +25,8 @@ Route::get('test/xml','Test\TestController@xmlTest');
 Route::get('/test/redis1','Test\TestController@redis1');
 Route::get('/test/redis2','Test\TestController@redis2');
 
+Route::get('/dev/redis/del','VoteController@delKey');
+
 
 //微信开发
 Route::get('/Wx/test','WeiXin\WxController@test');
