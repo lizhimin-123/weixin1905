@@ -40,6 +40,7 @@ class VoteController extends Controller
             //$u=Redis::hgetAll($u_k);
             $u=Redis::hMget($u_k,['openid','nickname','sex']);
             echo '<pre>';print_r($u);echo'</pre>';echo "<hr>";
+            echo '<img src="'.$u['headimgurl'].'" alt="">';echo '</br>';
         }
     }
 
