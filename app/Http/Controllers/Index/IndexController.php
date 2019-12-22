@@ -9,6 +9,7 @@ class IndexController extends Controller
 {
     //
     public function index(){
-        echo __METHOD__;
+        //echo __METHOD__;
+        return view('index.index');
     }
 }

@@ -36,7 +36,7 @@ class VoteController extends Controller
         $key = 'ss:vote:lizhimin';
         //  TODO 判断是否已经投过 集合或有序集合
         if (Redis::zrank($key,$user_info['openid'])){
-            echo "已经投过票了";
+            echo "已经投过票了";echo "</br>";
         }else{
             Redis::Zadd($key,time(),$openid);
         }

@@ -11,14 +11,15 @@
 |
 */
 
-Route::get('/', function () {
-//    $file_name="abc.mp3";
-//    $info=pathinfo($file_name);
+//Route::get('/', function () {
+////    $file_name="abc.mp3";
+////    $info=pathinfo($file_name);
+////
+////    echo $file_name.'的文件扩展名为:'.pathinfo($file_name)['extension'];die;
 //
-//    echo $file_name.'的文件扩展名为:'.pathinfo($file_name)['extension'];die;
+//    return view('welcome');
+//});
 
-    return view('welcome');
-});
 
 Route::get('/test/','Test\TestController@admin');
 Route::get('test/xml','Test\TestController@xmlTest');
@@ -38,6 +39,9 @@ Route::get('/Wx/menu','WeiXin\WxController@createMenu');//创建微信自定义�
 
 //微信公众号
 Route::get('/vote','VoteController@index');        //微信投票
+
+Route::get('/','Index\IndexController@index'); //网站首页
+
 
 
 
