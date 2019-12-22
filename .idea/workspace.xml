@@ -49,7 +49,7 @@
     <session id="-760545395">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="11" />
+          <entry key="project.closed" value="12" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="2" />
@@ -60,10 +60,10 @@
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.7" value="2" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="15" />
+          <entry key="project.opened" value="16" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -87,7 +87,7 @@
           <entry key="dummy" value="4" />
           <entry key="env" value="37" />
           <entry key="html" value="11" />
-          <entry key="php" value="4982" />
+          <entry key="php" value="5463" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
@@ -95,7 +95,7 @@
         <counts>
           <entry key="Blade" value="6" />
           <entry key="HTML" value="20" />
-          <entry key="PHP" value="4967" />
+          <entry key="PHP" value="5448" />
           <entry key="PLAIN_TEXT" value="45" />
         </counts>
       </usages-collector>
@@ -119,8 +119,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VoteController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="350">
-              <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+            <state relative-caret-position="250">
+              <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
               <folding>
                 <element signature="e#40#68#0#PHP" expanded="true" />
               </folding>
@@ -140,8 +140,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WeiXin/WxController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-50">
-              <caret line="70" column="23" lean-forward="true" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
+            <state relative-caret-position="1650">
+              <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
               <folding>
                 <element signature="e#47#83#0#PHP" expanded="true" />
               </folding>
@@ -315,10 +315,10 @@
       <path value="$PROJECT_DIR$/vendor/psr/http-message" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="392" />
-    <option name="y" value="42" />
-    <option name="width" value="1224" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="583" />
+    <option name="y" value="31" />
+    <option name="width" value="1225" />
     <option name="height" value="1030" />
   </component>
   <component name="ProjectView">
@@ -405,15 +405,16 @@
       <workItem from="1576639826513" duration="17895000" />
       <workItem from="1576712064971" duration="17539000" />
       <workItem from="1576800452323" duration="23752000" />
-      <workItem from="1576900680835" duration="6945000" />
+      <workItem from="1576900680835" duration="7576000" />
+      <workItem from="1576988606078" duration="5052000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188653000" />
+    <option name="totallyTimeSpent" value="194336000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="314" y="34" width="979" height="824" extended-state="0" />
+    <frame x="467" y="25" width="980" height="824" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.33767644" />
@@ -558,8 +559,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WeiXin/WxController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-50">
-          <caret line="70" column="23" lean-forward="true" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
+        <state relative-caret-position="1650">
+          <caret line="70" column="23" selection-start-line="70" selection-start-column="23" selection-end-line="70" selection-end-column="23" />
           <folding>
             <element signature="e#47#83#0#PHP" expanded="true" />
           </folding>
@@ -568,8 +569,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VoteController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="350">
-          <caret line="14" column="10" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
+        <state relative-caret-position="250">
+          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
           <folding>
             <element signature="e#40#68#0#PHP" expanded="true" />
           </folding>

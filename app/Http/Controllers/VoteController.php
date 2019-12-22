@@ -15,6 +15,10 @@ class VoteController extends Controller
         //dd($data);
         //获取用户信息
         $user_info = $this ->getUserInfo($data['access_token'],$data['openid']);
+        //保存用户信息
+        $userinfo_key = 'h:u'.$data['openid'];
+        Redis::hMset($userinfo_key,$user_info);
+
 
         //处理业务逻辑
         $openid = $user_info['openid'];
@@ -26,21 +30,17 @@ class VoteController extends Controller
             Redis::Zadd($key,time(),$openid);
         }
 
+        $total=Redis::Zcard($key); //统计投票人数
+        echo "投票人数:".$total;echo '</br>';
         $members = Redis::zRange($key,0,-1,true); //获取所有投票人数的openid
-        echo '<pre>';print_r($members);echo'</pre>';
+        echo '<pre>';print_r($members);echo'</pre>';echo '<hr>';
         foreach ($members as $k=>$v) {
             echo "用户: ".$k.'投票时间: '.date('Y-m-d H:i:s',$v);echo '</br>';
+            $u_k = 'h:u'.$k;
+            //$u=Redis::hgetAll($u_k);
+            $u=Redis::hMget($u_k,['openid','nickname','sex']);
+            echo '<pre>';print_r($u);echo'</pre>';echo "<hr>";
         }
-
-
-        //        $total=Redis::Scard($key); //统计投票人数
-        //        echo "投票人数:".$total;
-        //        echo "<hr>";
-        //        echo "<pre>";print_r($members);echo"</pre>";
-
-        //        $redis_key = 'vote';
-        //        $number = Redis::incr($redis_key);
-        //        echo "投票成功,当前票数".$number;
     }
 
     /**
@@ -72,5 +72,25 @@ class VoteController extends Controller
                 die('出错了 40001');
         }
         return $data;
+    }
+
+    public function hashTest(){
+
+        $uid = 1000;
+        $key='h:user_info:'.$uid;
+
+        $user_info = [
+            'uid' =>$uid,
+            'user_name'=>'zhangsan',
+            'email'=>'zhangsan@qq.com',
+            'age' =>22,
+            'sex' =>1
+        ];
+
+        Redis::hMset($key,$user_info);
+        die;
+        echo '<hr>';
+        $u = Redis::hGetAll($key);
+        echo '<pre>';print_r($u);echo'</pre>';
     }
 }
