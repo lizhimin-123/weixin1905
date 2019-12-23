@@ -28,10 +28,10 @@ class GoodsController extends AdminController
 
         $grid->column('id', __('Id'));
         $grid->column('goods_name', __('Goods name'));
-        $grid->column('img', __('Img'));
+        $grid->column('img', __('Img'))->image();
         $grid->column('price', __('Price'));
-        $grid->column('create_at', __('Create at'));
-        $grid->column('update_at', __('Update at'));
+        $grid->column('created_at', __('Create at'));
+        $grid->column('updated_at', __('Update at'));
 
         return $grid;
     }
@@ -68,8 +68,8 @@ class GoodsController extends AdminController
         $form->text('goods_name', __('Goods name'));
         $form->image('img', __('Img'));
         $form->number('price', __('Price'));
-        $form->datetime('create_at', __('Create at'))->default(date('Y-m-d H:i:s'));
-        $form->datetime('update_at', __('Update at'))->default(date('Y-m-d H:i:s'));
+        $form->datetime('created_at', __('Create at'))->default(date('Y-m-d H:i:s'));
+        $form->datetime('updated_at', __('Update at'))->default(date('Y-m-d H:i:s'));
 
         return $form;
     }
