@@ -14,13 +14,76 @@
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Controller.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Index/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Index/IndexController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Test/TestController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Test/WeiXinController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Test/WeiXinController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/VoteController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/VoteController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Controllers/WeiXin/WxController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/WeiXin/WxController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Model/GoodsModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/GoodsModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Model/WxUserModel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Model/WxUserModel.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/artisan" beforeDir="false" afterPath="$PROJECT_DIR$/artisan" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/admin.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/config/filesystems.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/filesystems.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/animate.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/animate.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/fakeLoader.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/fakeLoader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/magnific-popup.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/magnific-popup.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/materialize.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/materialize.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/materialize.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/materialize.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/normalize.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/owl.carousel.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/owl.carousel.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/owl.theme.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/owl.theme.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/owl.transitions.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/owl.transitions.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/font-awesome/css/font-awesome.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/font-awesome/css/font-awesome.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/font-awesome/css/font-awesome.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/font-awesome/css/font-awesome.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/font-awesome/fonts/FontAwesome.otf" beforeDir="false" afterPath="$PROJECT_DIR$/public/font-awesome/fonts/FontAwesome.otf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/font-awesome/fonts/fontawesome-webfont.eot" beforeDir="false" afterPath="$PROJECT_DIR$/public/font-awesome/fonts/fontawesome-webfont.eot" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/font-awesome/fonts/fontawesome-webfont.svg" beforeDir="false" afterPath="$PROJECT_DIR$/public/font-awesome/fonts/fontawesome-webfont.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/font-awesome/fonts/fontawesome-webfont.ttf" beforeDir="false" afterPath="$PROJECT_DIR$/public/font-awesome/fonts/fontawesome-webfont.ttf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/font-awesome/fonts/fontawesome-webfont.woff" beforeDir="false" afterPath="$PROJECT_DIR$/public/font-awesome/fonts/fontawesome-webfont.woff" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/font-awesome/fonts/fontawesome-webfont.woff2" beforeDir="false" afterPath="$PROJECT_DIR$/public/font-awesome/fonts/fontawesome-webfont.woff2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/about.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/about.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/blog1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/blog1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/blog2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/blog2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/blog3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/blog3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/cart-menu1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/cart-menu1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/cart-menu2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/cart-menu2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/cart1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/cart1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/cart2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/cart2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/favicon.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/favicon.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/image-profil.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/image-profil.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/parallax.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/parallax.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/product-new1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/product-new1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/product-new2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/product-new2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/product-new3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/product-new3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/product-new4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/product-new4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/product-top1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/product-top1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/product-top2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/product-top2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/product-top3.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/product-top3.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/product-top4.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/product-top4.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/profile.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/profile.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/shop-single.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/shop-single.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/slide1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/slide1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/slide2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/slide2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/slide3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/slide3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/testimonial1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/testimonial1.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/testimonial2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/testimonial2.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/testimonial3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/testimonial3.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/user-comment.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/user-comment.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/wishlist1.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/wishlist1.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/wishlist2.png" beforeDir="false" afterPath="$PROJECT_DIR$/public/img/wishlist2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/animatedModal.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/animatedModal.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/contact-form.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/contact-form.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/fakeLoader.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/fakeLoader.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery.filterizr.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.filterizr.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery.filterizr.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.filterizr.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery.magnific-popup.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.magnific-popup.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/jquery.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/jquery.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/materialize.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/materialize.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/materialize.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/materialize.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/owl.carousel.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/owl.carousel.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/portfolio.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/portfolio.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/index/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/index/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
@@ -51,13 +114,14 @@
     <session id="-760545395">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="13" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
           <entry key="project.open.time.10" value="2" />
           <entry key="project.open.time.11" value="2" />
           <entry key="project.open.time.14" value="1" />
           <entry key="project.open.time.15" value="1" />
+          <entry key="project.open.time.16" value="1" />
           <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.5" value="1" />
@@ -65,22 +129,22 @@
           <entry key="project.open.time.7" value="3" />
           <entry key="project.open.time.8" value="1" />
           <entry key="project.open.time.9" value="1" />
-          <entry key="project.opened" value="17" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="env" value="9" />
           <entry key="html" value="1" />
-          <entry key="php" value="39" />
+          <entry key="php" value="47" />
           <entry key="txt" value="2" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Blade" value="2" />
+          <entry key="Blade" value="3" />
           <entry key="HTML" value="1" />
-          <entry key="PHP" value="37" />
+          <entry key="PHP" value="44" />
           <entry key="PLAIN_TEXT" value="11" />
         </counts>
       </usages-collector>
@@ -89,15 +153,15 @@
           <entry key="dummy" value="4" />
           <entry key="env" value="37" />
           <entry key="html" value="11" />
-          <entry key="php" value="6230" />
+          <entry key="php" value="6644" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Blade" value="38" />
+          <entry key="Blade" value="128" />
           <entry key="HTML" value="21" />
-          <entry key="PHP" value="6182" />
+          <entry key="PHP" value="6506" />
           <entry key="PLAIN_TEXT" value="45" />
         </counts>
       </usages-collector>
@@ -105,29 +169,53 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/web.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="675">
+              <caret line="43" column="56" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
+              <folding>
+                <element signature="e#391#422#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Goods/IndexController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="215">
+              <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+              <folding>
+                <element signature="e#46#82#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/admin.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="390" column="30" lean-forward="true" selection-start-line="390" selection-start-column="30" selection-end-line="390" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/GoodsController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="265">
-              <caret line="68" column="46" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
+            <state relative-caret-position="163">
+              <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/goods/detail.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/vendor/symfony/mime/MimeTypes.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="140" column="9" lean-forward="true" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
+            <state relative-caret-position="96">
+              <caret line="367" column="33" lean-forward="true" selection-start-line="367" selection-start-column="33" selection-end-line="367" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -135,8 +223,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Admin/routes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="89">
-              <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+            <state relative-caret-position="375">
+              <caret line="15" selection-start-line="15" selection-end-line="15" />
             </state>
           </provider>
         </entry>
@@ -154,7 +242,6 @@
       <find>CLICK</find>
       <find>text</find>
       <find>openid</find>
-      <find>createMenu</find>
       <find>&amp;</find>
       <find>菜单</find>
       <find>$redirect_uri</find>
@@ -165,6 +252,13 @@
       <find>getAccessToken</find>
       <find>access+</find>
       <find>获取用户</find>
+      <find>createMenu</find>
+      <find>shop-sing</find>
+      <find>blog1</find>
+      <find>shop-</find>
+      <find>img</find>
+      <find>excepts</find>
+      <find>content</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -186,15 +280,18 @@
         <option value="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" />
         <option value="$PROJECT_DIR$/app/Admin/Controllers/WxUserController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/VoteController.php" />
-        <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/WeiXin/WxController.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/Index/IndexController.php" />
         <option value="$PROJECT_DIR$/resources/views/index/index.blade.php" />
         <option value="$PROJECT_DIR$/app/Model/GoodsModel.php" />
-        <option value="$PROJECT_DIR$/app/Admin/routes.php" />
         <option value="$PROJECT_DIR$/config/filesystems.php" />
         <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/app/Admin/routes.php" />
+        <option value="$PROJECT_DIR$/routes/web.php" />
+        <option value="$PROJECT_DIR$/app/Http/Controllers/Goods/IndexController.php" />
+        <option value="$PROJECT_DIR$/config/admin.php" />
         <option value="$PROJECT_DIR$/app/Admin/Controllers/GoodsController.php" />
+        <option value="$PROJECT_DIR$/resources/views/goods/detail.blade.php" />
       </list>
     </option>
   </component>
@@ -313,9 +410,9 @@
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="486" />
-    <option name="y" value="77" />
-    <option name="width" value="1225" />
+    <option name="x" value="600" />
+    <option name="y" value="51" />
+    <option name="width" value="1455" />
     <option name="height" value="1030" />
   </component>
   <component name="ProjectView">
@@ -323,7 +420,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -352,46 +448,13 @@
             <path>
               <item name="weixin1905" type="b2602c69:ProjectViewProjectNode" />
               <item name="weixin1905" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weixin1905" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weixin1905" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weixin1905" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weixin1905" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Index" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weixin1905" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weixin1905" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="WeiXin" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weixin1905" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weixin1905" type="462c0819:PsiDirectoryNode" />
               <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="weixin1905" type="b2602c69:ProjectViewProjectNode" />
-              <item name="weixin1905" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -443,18 +506,19 @@
       <workItem from="1576800452323" duration="23752000" />
       <workItem from="1576900680835" duration="7576000" />
       <workItem from="1576988606078" duration="9156000" />
-      <workItem from="1577021588676" duration="10495000" />
+      <workItem from="1577021588676" duration="17311000" />
+      <workItem from="1577084172499" duration="4874000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="208935000" />
+    <option name="totallyTimeSpent" value="220625000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="389" y="62" width="980" height="824" extended-state="0" />
+    <frame x="480" y="41" width="1164" height="824" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28850326" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.24412297" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -555,33 +619,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="25" column="29" selection-start-line="25" selection-start-column="29" selection-end-line="25" selection-end-column="29" />
-          <folding>
-            <element signature="e#391#422#0#PHP" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WeiXin/WxController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="285" column="18" lean-forward="true" selection-start-line="285" selection-start-column="18" selection-end-line="285" selection-end-column="18" />
-          <folding>
-            <element signature="e#47#83#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/VoteController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="68" column="7" lean-forward="true" selection-start-line="68" selection-start-column="7" selection-end-line="68" selection-end-column="7" />
-          <folding>
-            <element signature="e#40#68#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -589,9 +630,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
           <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#46#82#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -616,13 +654,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="4" column="30" selection-start-line="4" selection-start-column="30" selection-end-line="4" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/symfony/mime/MimeTypes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
@@ -630,17 +661,65 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WeiXin/WxController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="21" lean-forward="true" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/web.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="43" column="56" selection-start-line="43" selection-start-column="56" selection-end-line="43" selection-end-column="56" />
+          <folding>
+            <element signature="e#391#422#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Admin/routes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="89">
-          <caret line="8" column="49" selection-start-line="8" selection-start-column="49" selection-end-line="8" selection-end-column="49" />
+        <state relative-caret-position="375">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Goods/IndexController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="215">
+          <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
+          <folding>
+            <element signature="e#46#82#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/admin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="390" column="30" lean-forward="true" selection-start-line="390" selection-start-column="30" selection-end-line="390" selection-end-column="30" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Admin/Controllers/GoodsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="68" column="46" selection-start-line="68" selection-start-column="46" selection-end-line="68" selection-end-column="46" />
+        <state relative-caret-position="163">
+          <caret line="66" lean-forward="true" selection-start-line="66" selection-end-line="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/goods/detail.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="367" column="33" lean-forward="true" selection-start-line="367" selection-start-column="33" selection-end-line="367" selection-end-column="33" />
         </state>
       </provider>
     </entry>

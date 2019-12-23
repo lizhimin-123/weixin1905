@@ -70,6 +70,7 @@ class GoodsController extends AdminController
         $form->number('price', __('Price'));
         $form->datetime('created_at', __('Create at'))->default(date('Y-m-d H:i:s'));
         $form->datetime('updated_at', __('Update at'))->default(date('Y-m-d H:i:s'));
+        $form->ckeditor('desc');
 
         return $form;
     }
