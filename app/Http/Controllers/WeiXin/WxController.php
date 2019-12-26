@@ -127,7 +127,7 @@ class WxController extends Controller
 //                echo $response_xml;
 //            }
             //签到积分
-            if($xml_obj->EventKey=='weather'){
+            if($xml_obj->EventKey=='sign'){
                 $response_xml='<xml>
 <ToUserName><![CDATA[' . $openid . ']]></ToUserName>
                           <FromUserName><![CDATA[' . $xml_obj->ToUserName . ']]></FromUserName>
@@ -288,20 +288,27 @@ class WxController extends Controller
             'button' =>[
                 [
                     'type'  =>'click',
-                    'name'  =>'获取天气',
+                    'name'  =>'签到',
                     //'key'   =>'weather'
                     'key'   =>'sign'
                 ],
                 [
-                    'type'  => 'view',
-                    'name'  => '投票',
-                    'url'   => 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx70b42c1d1a4ee5b4&redirect_uri='.$redirect_uri.'&response_type=code&scope=snsapi_userinfo&state=ABCD1905#wechat_redirect'
+                    'type'  =>'click',
+                    'name'  =>'查询积分',
+                    //'key'   =>'weather'
+                    'key'   =>'int'
                 ],
-                [
-                    'type'  => 'view',
-                    'name'  => '商城',
-                    'url'   => 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx70b42c1d1a4ee5b4&redirect_uri='.$redirect_uri2.'&response_type=code&scope=snsapi_userinfo&state=ABCD1905#wechat_redirect'
-                ]
+
+//                [
+//                    'type'  => 'view',
+//                    'name'  => '投票',
+//                    'url'   => 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx70b42c1d1a4ee5b4&redirect_uri='.$redirect_uri.'&response_type=code&scope=snsapi_userinfo&state=ABCD1905#wechat_redirect'
+//                ],
+//                [
+//                    'type'  => 'view',
+//                    'name'  => '商城',
+//                    'url'   => 'https://open.weixin.qq.com/connect/oauth2/authorize?appid=wx70b42c1d1a4ee5b4&redirect_uri='.$redirect_uri2.'&response_type=code&scope=snsapi_userinfo&state=ABCD1905#wechat_redirect'
+//                ]
 
             ]
         ];
