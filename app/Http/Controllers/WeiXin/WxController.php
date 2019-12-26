@@ -74,7 +74,7 @@ class WxController extends Controller
         $event = $xml_obj->Event;//获取事件类型
 
         $openid = $xml_obj->FromUserName;//获取用户的openid
-        dd($openid);
+
         if ($event == 'subscribe') {
             $user = WxUserModel::where(['openid' => $openid])->first();
 //            dd($user);
