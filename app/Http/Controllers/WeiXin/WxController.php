@@ -79,7 +79,7 @@ class WxController extends Controller
             $user = WxUserModel::where(['openid' => $openid])->first();
 //            dd($user);
             if ($user) {
-                $msg = "欢迎".$user['openid']."回来";
+                $msg = "欢迎 One 回来";
                 $response_text = '<xml>
                           <ToUserName><![CDATA[' . $openid . ']]></ToUserName>
                           <FromUserName><![CDATA[' . $xml_obj->ToUserName . ']]></FromUserName>
@@ -106,7 +106,7 @@ class WxController extends Controller
                 //信息入库
 
                 $uid = WxUserModel::insertGetId($user_data);
-                $msg = "谢谢你的关注";
+                $msg = "谢谢 One 关注";
                 $response_text = '<xml>
                           <ToUserName><![CDATA[' . $openid . ']]></ToUserName>
                           <FromUserName><![CDATA[' . $xml_obj->ToUserName . ']]></FromUserName>
@@ -136,17 +136,6 @@ class WxController extends Controller
                           <CreateTime>' . time() . '</CreateTime>
                           <MsgType><![CDATA[text]]></MsgType>
                           <Content><![CDATA[签到成功]]></Content>
-                          </xml>';
-                echo $response_xml;
-            }
-
-            if($xml_obj->EventKey=='int'){
-                $response_xml='<xml>
-<ToUserName><![CDATA[' . $openid . ']]></ToUserName>
-                          <FromUserName><![CDATA[' . $xml_obj->ToUserName . ']]></FromUserName>
-                          <CreateTime>' . time() . '</CreateTime>
-                          <MsgType><![CDATA[text]]></MsgType>
-                          <Content><![CDATA[当前用户积分: 50]]></Content>
                           </xml>';
                 echo $response_xml;
             }
