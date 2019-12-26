@@ -116,19 +116,27 @@ class WxController extends Controller
             }
         }elseif ($event=='CLICK'){//菜单点击事件
             //获取天气
+//            if($xml_obj->EventKey=='weather'){
+//                $response_xml='<xml>
+//<ToUserName><![CDATA[' . $openid . ']]></ToUserName>
+//                          <FromUserName><![CDATA[' . $xml_obj->ToUserName . ']]></FromUserName>
+//                          <CreateTime>' . time() . '</CreateTime>
+//                          <MsgType><![CDATA[text]]></MsgType>
+//                          <Content><![CDATA['.date('Y-m-d H:i:s') .'晴天'.']]></Content>
+//                          </xml>';
+//                echo $response_xml;
+//            }
+            //签到积分
             if($xml_obj->EventKey=='weather'){
                 $response_xml='<xml>
 <ToUserName><![CDATA[' . $openid . ']]></ToUserName>
                           <FromUserName><![CDATA[' . $xml_obj->ToUserName . ']]></FromUserName>
                           <CreateTime>' . time() . '</CreateTime>
                           <MsgType><![CDATA[text]]></MsgType>
-                          <Content><![CDATA['.date('Y-m-d H:i:s') .'晴天'.']]></Content>
+                          <Content><![CDATA[签到成功]]></Content>
                           </xml>';
                 echo $response_xml;
             }
-//            else{
-//                echo "未知";
-//            }
 
         }
 
@@ -281,7 +289,8 @@ class WxController extends Controller
                 [
                     'type'  =>'click',
                     'name'  =>'获取天气',
-                    'key'   =>'weather'
+                    //'key'   =>'weather'
+                    'key'   =>'sign'
                 ],
                 [
                     'type'  => 'view',
