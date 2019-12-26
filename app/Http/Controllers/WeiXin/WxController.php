@@ -77,7 +77,7 @@ class WxController extends Controller
         if ($event == 'subscribe') {
             $user = WxUserModel::where(['openid' => $openid])->first();
             if ($user) {
-                $msg = "欢迎[CDATA[' . $openid . ']回来";
+                $msg = "欢迎".Name."回来";
                 $response_text = '<xml>
                           <ToUserName><![CDATA[' . $openid . ']]></ToUserName>
                           <FromUserName><![CDATA[' . $xml_obj->ToUserName . ']]></FromUserName>
