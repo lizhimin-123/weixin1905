@@ -55,7 +55,6 @@ class WxController extends Controller
         $tmpStr = implode($tmpArr);
         $tmpStr = sha1($tmpStr);
 
-
         if ($tmpStr == $signature) {        //验证通过
             echo $echostr;
         } else {
@@ -78,7 +77,7 @@ class WxController extends Controller
         if ($event == 'subscribe') {
             $user = WxUserModel::where(['openid' => $openid])->first();
             if ($user) {
-                $msg = "欢迎回来";
+                $msg = "欢迎".$openid."回来";
                 $response_text = '<xml>
                           <ToUserName><![CDATA[' . $openid . ']]></ToUserName>
                           <FromUserName><![CDATA[' . $xml_obj->ToUserName . ']]></FromUserName>
