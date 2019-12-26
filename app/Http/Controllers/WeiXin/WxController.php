@@ -140,6 +140,17 @@ class WxController extends Controller
                 echo $response_xml;
             }
 
+            if($xml_obj->EventKey=='int'){
+                $response_xml='<xml>
+<ToUserName><![CDATA[' . $openid . ']]></ToUserName>
+                          <FromUserName><![CDATA[' . $xml_obj->ToUserName . ']]></FromUserName>
+                          <CreateTime>' . time() . '</CreateTime>
+                          <MsgType><![CDATA[text]]></MsgType>
+                          <Content><![CDATA[当前用户积分为: 50]]></Content>
+                          </xml>';
+                echo $response_xml;
+            }
+
         }
 
 

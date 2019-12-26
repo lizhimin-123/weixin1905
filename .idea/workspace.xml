@@ -156,7 +156,7 @@
           <entry key="dummy" value="4" />
           <entry key="env" value="37" />
           <entry key="html" value="11" />
-          <entry key="php" value="8271" />
+          <entry key="php" value="8287" />
           <entry key="txt" value="4" />
         </counts>
       </usages-collector>
@@ -164,7 +164,7 @@
         <counts>
           <entry key="Blade" value="128" />
           <entry key="HTML" value="21" />
-          <entry key="PHP" value="8133" />
+          <entry key="PHP" value="8149" />
           <entry key="PLAIN_TEXT" value="45" />
         </counts>
       </usages-collector>
@@ -184,8 +184,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WeiXin/WxController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="400">
-              <caret line="139" column="35" lean-forward="true" selection-start-line="139" selection-start-column="35" selection-end-line="139" selection-end-column="35" />
+            <state relative-caret-position="350">
+              <caret line="148" column="55" selection-start-line="148" selection-start-column="55" selection-end-line="148" selection-end-column="55" />
               <folding>
                 <element signature="e#47#83#0#PHP" expanded="true" />
                 <element signature="e#6422#6916#0#PHP" />
@@ -207,7 +207,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Sex</find>
       <find>Headimgurl</find>
       <find>判断</find>
       <find>关注</find>
@@ -237,6 +236,7 @@
       <find>$signature</find>
       <find>receiv</find>
       <find>dd</find>
+      <find>int</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -502,12 +502,12 @@
       <workItem from="1577084172499" duration="5471000" />
       <workItem from="1577090990170" duration="10687000" />
       <workItem from="1577240721815" duration="4776000" />
-      <workItem from="1577321015214" duration="8366000" />
+      <workItem from="1577321015214" duration="8539000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="245051000" />
+    <option name="totallyTimeSpent" value="245224000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -710,8 +710,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/WeiXin/WxController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="400">
-          <caret line="139" column="35" lean-forward="true" selection-start-line="139" selection-start-column="35" selection-end-line="139" selection-end-column="35" />
+        <state relative-caret-position="350">
+          <caret line="148" column="55" selection-start-line="148" selection-start-column="55" selection-end-line="148" selection-end-column="55" />
           <folding>
             <element signature="e#47#83#0#PHP" expanded="true" />
             <element signature="e#6422#6916#0#PHP" />
